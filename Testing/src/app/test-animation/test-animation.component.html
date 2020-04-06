@@ -1,0 +1,23 @@
+<h1>Test Animation</h1>
+
+<!--  -->
+
+<div [@blueBlack]="isBlue ? 'Blue' : 'Black'"
+     [@blueGreen] = "isNotGreen ? 'Blue' : 'green'"
+     [@blueOrange] = "isNotOrange ? 'Blue' : 'orange'"
+     [@bluePink] = "isNotPink ? 'Blue' : 'pink'"
+     [@bluePurple] = "isNotPurple? 'Blue' : 'purple'"
+    class="container">
+    <p>This section here is now {{isBlue ? 'Blue' : 'Black'}}!</p>
+
+    <p>Also could be {{isNotGreen ? 'Blue' : 'green'}}!</p> 
+    <p>Also could be {{isNotOrange ? 'Blue' : 'orange'}}!</p> 
+    <p>Also could be {{isNotPink ? 'Blue' : 'pink'}}!</p> 
+    <p>Also could be {{isNotPurple ? 'Blue' : 'purple'}}!</p> 
+
+</div>
+<button (click)="toggle()">Switch between Black</button>
+<button (click)="green()">Switch to Green</button>
+<button (click)="orange()">Switch to Orange</button>
+<button (click)="pink()">Switch to Pink</button>
+<button (click)="purple()">Switch to Purple</button>

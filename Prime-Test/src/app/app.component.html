@@ -1,0 +1,28 @@
+<h1>Hello World from Prime</h1>
+<hr>
+<button pButton type="button"></button>
+<p-button label="Click" class="ui-button-secondary"></p-button>
+<p-selectButton></p-selectButton>
+<p-menu></p-menu>
+<p-tabMenu></p-tabMenu>
+<p-table>
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Vin</th>
+          <th>Year</th>
+          <th>Brand</th>
+          <th>Color</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body">
+      <tr>
+          <td>{{car.vin}}</td>
+          <td>{{car.year}}</td>
+          <td>{{car.brand}}</td>
+          <td>{{car.color}}</td>
+      </tr>
+  </ng-template>
+</p-table>
+
+
+
